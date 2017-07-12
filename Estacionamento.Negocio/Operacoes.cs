@@ -26,7 +26,7 @@ namespace Estacionamento.Negocio
                 throw new Exception("Estacionamento cheio!");
 
             if (_estacionamento.ContainsKey(placa))
-                throw new Exception(String.Format("Carro placa '{0} já existe!", placa));
+                throw new Exception(String.Format("Carro placa '{0}' já existe!", placa));
 
             return true;
         }

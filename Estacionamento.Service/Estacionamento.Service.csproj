@@ -8,8 +8,8 @@
     <ProjectGuid>{7B857446-A627-42E5-91FD-9B2F4D08F7AC}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>EstacionamentoService</RootNamespace>
-    <AssemblyName>EstacionamentoService</AssemblyName>
+    <RootNamespace>Estacionamento.Service</RootNamespace>
+    <AssemblyName>Estacionamento.Service</AssemblyName>
     <ProjectTypeGuids>{3D9AD99F-2412-4246-B90B-4EAA41C64699};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <StartArguments>/client:"WcfTestClient.exe"</StartArguments>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
