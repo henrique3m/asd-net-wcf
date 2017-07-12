@@ -10,7 +10,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Estacionamento.Apresentacao
 		{7B857446-A627-42E5-91FD-9B2F4D08F7AC} = {7B857446-A627-42E5-91FD-9B2F4D08F7AC}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EstacionamentoService", "EstacionamentoService\EstacionamentoService.csproj", "{7B857446-A627-42E5-91FD-9B2F4D08F7AC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Estacionamento.Service", "EstacionamentoService\Estacionamento.Service.csproj", "{7B857446-A627-42E5-91FD-9B2F4D08F7AC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

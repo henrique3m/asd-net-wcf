@@ -6,7 +6,7 @@ using System.ServiceModel;
 using System.Text;
 using Estacionamento.Negocio;
 
-namespace EstacionamentoService
+namespace Estacionamento.Service
 {
     // OBSERVAÇÃO: Você pode usar o comando "Renomear" no menu "Refatorar" para alterar o nome da classe "Service1" no arquivo de código e configuração ao mesmo tempo.
     public class EstacionamentoServiceImp : IEstacionamentoService

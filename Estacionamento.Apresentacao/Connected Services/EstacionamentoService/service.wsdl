@@ -70,7 +70,7 @@
   </wsdl:binding>
   <wsdl:service name="EstacionamentoServiceImp">
     <wsdl:port name="BasicHttpBinding_IEstacionamentoService" binding="tns:BasicHttpBinding_IEstacionamentoService">
-      <soap:address location="http://localhost:8733/Design_Time_Addresses/EstacionamentoService/IEstacionamentoService/" />
+      <soap:address location="http://localhost:8733/Design_Time_Addresses/Estacionamento.Service/IEstacionamentoService/" />
     </wsdl:port>
   </wsdl:service>
 </wsdl:definitions>

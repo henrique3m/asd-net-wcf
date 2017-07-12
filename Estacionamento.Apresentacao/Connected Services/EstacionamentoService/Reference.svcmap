@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="a5e9e5b3-7ecb-4e66-a175-bb16cf10b510" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="6e381253-4577-4c26-b737-4aadadb6e134" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -19,12 +19,12 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://localhost:8733/Design_Time_Addresses/EstacionamentoService/IEstacionamentoService/mex" Protocol="mex" SourceId="1" />
+    <MetadataSource Address="http://localhost:8733/Design_Time_Addresses/Estacionamento.Service/IEstacionamentoService/mex" Protocol="mex" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="65fa43aa-d786-4821-acef-9bb07b8ff0c3" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/EstacionamentoService/IEstacionamentoService/mex" />
-    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="7a5777b8-9d2a-43ef-87e9-99fb9a640328" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/EstacionamentoService/IEstacionamentoService/mex" />
-    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="c62a8aab-be63-4ccf-935b-af3753ceb4fe" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/EstacionamentoService/IEstacionamentoService/mex" />
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="f5f12dda-3138-4f35-add3-fe315ee34863" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/Estacionamento.Service/IEstacionamentoService/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="87d0523a-b134-482d-9944-ac558239f9e3" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/Estacionamento.Service/IEstacionamentoService/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="c7b01e05-fdeb-4ec9-b996-e67c1aa3d5fc" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/Estacionamento.Service/IEstacionamentoService/mex" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
