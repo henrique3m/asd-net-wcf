@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Estacionamento.Negocio;
 
 namespace Estacionamento.Apresentacao
 {
@@ -15,7 +14,7 @@ namespace Estacionamento.Apresentacao
     {
         public EstacionamentoForm()
         {
-            InitializeComponent();
+            InitializeComponent();            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -25,8 +24,8 @@ namespace Estacionamento.Apresentacao
             try
             {
 
-
-                Operacoes.Checkin(placa);
+                EstacionamentoService.EstacionamentoServiceClient client = new EstacionamentoService.EstacionamentoServiceClient();                
+                client.Checkin(placa);
 
                 MessageBox.Show(String.Format("Placa '{0}' adicionada.", placa));
                 textBox1.Text = string.Empty;
@@ -44,7 +43,8 @@ namespace Estacionamento.Apresentacao
 
             try
             {
-                var valor = Operacoes.Checkout(placa);
+                EstacionamentoService.EstacionamentoServiceClient client = new EstacionamentoService.EstacionamentoServiceClient();
+                var valor = client.Checkout(placa);
 
                 MessageBox.Show(String.Format("Placa '{0}' valor de R${1}.", placa, valor));
                 textBox1.Text = string.Empty;
@@ -53,6 +53,14 @@ namespace Estacionamento.Apresentacao
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            EstacionamentoService.EstacionamentoServiceClient client = new EstacionamentoService.EstacionamentoServiceClient();
+            var valor = client.VagasRestantes();
+
+            MessageBox.Show(String.Format("Vagas restantes '{0}'", valor));
         }
     }
 }

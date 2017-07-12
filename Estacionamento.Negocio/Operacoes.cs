@@ -54,19 +54,7 @@ namespace Estacionamento.Negocio
             _estacionamento.Add(placa, DateTime.Now);
             
         }
-
-        /// <summary>
-        /// Registra a saída de um carro do estacionamento.
-        /// </summary>
-        public static double Checkout(string placa)
-        {
-            ValidarCheckout(placa);
-            DateTime horaEntrada = _estacionamento[placa];
-
-            _estacionamento.Remove(placa);
-
-            return CalcularValorEstacionamento(horaEntrada, DateTime.Now);
-        }
+       
 
         /// <summary>
         /// Calcula o valor com base no tempo de permanência
@@ -77,5 +65,19 @@ namespace Estacionamento.Negocio
             return Math.Round((permanencia.TotalMinutes / 3), 2); // 3 reais é o valor mínimo
         }
 
+        public static double Checkout(string placa)
+        {
+            ValidarCheckout(placa);
+            DateTime horaEntrada = _estacionamento[placa];
+
+            _estacionamento.Remove(placa);
+
+            return CalcularValorEstacionamento(horaEntrada, DateTime.Now);
+        }
+
+        public static int VagasRestantes()
+        {
+            return VAGAS_TOTAIS - _estacionamento.Count;
+        }
     }
 }

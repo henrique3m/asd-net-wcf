@@ -1,0 +1,22 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Runtime.Serialization;
+using System.ServiceModel;
+using System.Text;
+
+namespace EstacionamentoService
+{    
+    [ServiceContract]
+    public interface IEstacionamentoService
+    {
+        [OperationContract]
+        double Checkout(string placa);
+
+        [OperationContract]
+        void Checkin(string placa);
+
+        [OperationContract]
+        int VagasRestantes();
+    }
+}
